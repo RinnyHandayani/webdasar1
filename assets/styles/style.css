@@ -1,96 +1,108 @@
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Quicksand",sans-serif;
-    margin: 0%;
-    padding: 0%;
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
- main {
+main {
     padding: 20px;
-    overflow: auto;
- }
+    display: flex;
+    gap: 1.5rem;
+}
 
- 
+h2, h3 {
+    color: #5db2f8;
+}
 
- #content {
-    float: left;
-    width: 75%;
- }
-
- aside {
-    float: right;
-    width: 25%;
-    padding-left: 20px;
- }
-
-h2,h3 {
-    color: #00a2c6;
-    }
-
- nav a {
+nav a {
     font-size: 18px;
-    font-weight:400 ;
+    font-weight: 400;
     text-decoration: none;
     color: white;
-    }
+    padding: 10px;
+}
 
-    nav a:hover {
+nav ul {
+    padding: inline;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a:hover {
     font-weight: bold;
-    }
+}
 
- .Profile header {
+.profile  header {
     text-align: center;
-    }
+}
 
- .featured-image {
+.featured-image {
     width: 100%;
-    max-width: 300px;
-    object-fit: cover;
+    max-height: 300px;
+    object-fit: contain;
     object-position: center;
-    }
+}
 
-    .profile img {
-        width: 200px;
-    }
-
+.profile img {
+    width: 200px;
+} 
 
 .card {
-    box-shadow: 0 4px 8px rgb(0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
-    }
+}
 
-    .jumbotron {
-        font-size: 20px;
-        padding: 60px;
-        background-color: #00c8eb;
-        text-align: center;
-        color: white;
-    }
-
-
-    nav li {
-        display: inline;
-        list-style-type:none ;
-        margin-right: 20px;
-    }
-
-     nav {
-        background-color: #00a2c6;
-        padding: 5px;
-    }
-
-    footer {
+footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
-    font-size: bold;
+    background-color: #c06eb5;
     text-align: center;
+    font-weight: bold;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #c06eb5;
+    text-align: center;
+    color: black;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #ad83ad;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    display: inline;
+}
+
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
     }
-
-
+}
