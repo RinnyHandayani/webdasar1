@@ -15,7 +15,7 @@ main {
 }
 
 h2, h3 {
-    color: #5db2f8;
+    color: #5d67f8;
 }
 
 nav a {
@@ -60,7 +60,7 @@ nav a:hover {
 footer {
     padding: 20px;
     color: white;
-    background-color: #ffafca;
+    background-color: #e5a2ff;
     text-align: center;
     font-weight: bold;
 }
@@ -68,7 +68,7 @@ footer {
 .jumbotron {
     font-size: 20px;
     padding: 60px;
-    background-color: #ffafca;
+    background-color: #e5a2ff;
     text-align: center;
     color: black;
 }
@@ -79,7 +79,7 @@ nav li {
 }
 
 nav {
-    background-color: #ff9ebe;
+    background-color: #de8bff;
     padding: 5px;
     position: sticky;
     top: 0;
